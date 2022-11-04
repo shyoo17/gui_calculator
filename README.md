@@ -4,7 +4,7 @@ One Paragraph of project description goes here
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purpose.
 
 ### Prerequisites
 
@@ -16,17 +16,18 @@ python -m pip install pyqt5
 
 ## Built With
 
-* [PyQt5](http://www.dropwizard.io/1.0.2/docs/) - The GUI framework used
+* [PyQt5](https://pypi.org/project/PyQt5/) - The GUI framework used
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/shyoo17/gui_calculator/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **studyingrabbit** - *Initial work* - [studyingrabbit](https://studyingrabbit.tistory.com/)
+* **Seungho Yoo** - *Init repository* - this repository
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/shyoo17/gui_calculator/CONTRIBUTORS.md) who participated in this project.
 
 ## License
 
