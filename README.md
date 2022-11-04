@@ -8,17 +8,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+To execute the calculator, PyQt5 must be installed.
 
 ```
-Give examples
+python -m pip install pyqt5
 ```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [PyQt5](http://www.dropwizard.io/1.0.2/docs/) - The GUI framework used
 
 ## Contributing
 
