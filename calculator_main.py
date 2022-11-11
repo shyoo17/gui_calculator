@@ -15,6 +15,9 @@ class Main(QDialog):
         layout_number = QGridLayout()
         layout_equation_solution = QFormLayout()
 
+        self.temp_number = 0
+        self.temp_operator = ""
+
         ### 수식 입력과 답 출력을 위한 LineEdit 위젯 생성
         label_equation = QLabel("Equation: ")
         label_solution = QLabel("Number: ")
@@ -101,14 +104,41 @@ class Main(QDialog):
         self.equation.setText(equation)
 
     def button_operation_clicked(self, operation):
-        equation = self.equation.text()
-        equation += operation
-        self.equation.setText(equation)
+
+        if operation not in ["square", "root", "inverse"]:
+            self.temp_number = float(self.number_display.text())
+            self.number_display.setText("")
+
+            self.temp_operator = operation
+
+        else:
+            if operation == "square":
+                self.temp_number = float(self.number_display.text())
+                self.temp_number = self.temp_number*self.temp_number
+                self.number_display.setText(str(self.temp_number))
+                pass
+            if operation == "root":
+                pass
+            if operation == "inverse":
+                pass
+
+            self.temp_operator = ""
+            self.temp_number = 0
+        # equation = self.equation.text()
+        #equation += operation
+        # self.equation.setText(equation)
 
     def button_equal_clicked(self):
-        equation = self.equation.text()
-        solution = eval(equation)
-        self.solution.setText(str(solution))
+        # equation = self.equation.text()
+        #solution = eval(equation)
+        # self.solution.setText(str(solution))
+        temp_second_number = float(self.number_display.text())
+
+        if self.temp_operator == "+":
+            temp_result = temp_second_number + self.temp_number
+
+        self.number_display.setText(str(temp_result))
+
 
     def button_clear_clicked(self):
         self.equation.setText("")
